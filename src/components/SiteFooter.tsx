@@ -1,8 +1,27 @@
+import { Link } from "react-router-dom";
+
 const footerLinks = {
-  Products: ["AI Contact Centre", "AI Ticketing", "Customer Value Management", "Conversational AI"],
-  Company: ["About Us", "Careers", "Our Approach", "Case Studies"],
-  Resources: ["Insights", "Documentation", "API Reference", "Support"],
-  Legal: ["Privacy Policy", "Terms of Service", "Cookie Policy"],
+  Products: [
+    { label: "AI Contact Centre", path: "/products" },
+    { label: "AI Ticketing", path: "/products" },
+    { label: "Customer Value Management", path: "/products" },
+    { label: "Conversational AI", path: "/products" },
+  ],
+  Company: [
+    { label: "Our Approach", path: "/our-approach" },
+    { label: "Case Studies", path: "/case-studies" },
+    { label: "Contact", path: "/contact" },
+  ],
+  Resources: [
+    { label: "Insights", path: "/insights" },
+    { label: "Industries", path: "/industries" },
+    { label: "Solutions", path: "/solutions" },
+  ],
+  Legal: [
+    { label: "Privacy Policy", path: "#" },
+    { label: "Terms of Service", path: "#" },
+    { label: "Cookie Policy", path: "#" },
+  ],
 };
 
 const SiteFooter = () => {
@@ -10,9 +29,8 @@ const SiteFooter = () => {
     <footer className="bg-navy py-16">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-          {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <span className="text-2xl font-bold text-primary-foreground tracking-tight">Worktual</span>
+            <Link to="/" className="text-2xl font-bold text-primary-foreground tracking-tight">Worktual</Link>
             <p className="mt-4 text-sm text-primary-foreground/50 leading-relaxed">
               Enterprise AI solutions, built bespoke.
             </p>
@@ -23,10 +41,10 @@ const SiteFooter = () => {
               <h4 className="text-sm font-semibold text-primary-foreground mb-4">{group}</h4>
               <ul className="space-y-2.5">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-sm text-primary-foreground/40 hover:text-primary-foreground/70 transition-colors">
-                      {link}
-                    </a>
+                  <li key={link.label}>
+                    <Link to={link.path} className="text-sm text-primary-foreground/40 hover:text-primary-foreground/70 transition-colors">
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>

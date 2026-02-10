@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import PageLayout from "@/components/PageLayout";
 import HeroSection from "@/components/HeroSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import ProductsSection from "@/components/ProductsSection";
@@ -7,26 +7,25 @@ import ApproachSection from "@/components/ApproachSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import InsightsSection from "@/components/InsightsSection";
 import ContactSection from "@/components/ContactSection";
-import SiteFooter from "@/components/SiteFooter";
-import CookiePopup from "@/components/CookiePopup";
-import ChatWidget from "@/components/ChatWidget";
+import HomeSolutionsDeep from "@/components/HomeSolutionsDeep";
+import HomeProductsDeep from "@/components/HomeProductsDeep";
+import HomeIndustriesDeep from "@/components/HomeIndustriesDeep";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
+    <PageLayout>
       <HeroSection />
       <SolutionsSection />
+      <HomeSolutionsDeep />
       <ProductsSection />
+      <HomeProductsDeep />
       <IndustriesSection />
+      <HomeIndustriesDeep />
       <ApproachSection />
       <CaseStudiesSection />
       <InsightsSection />
       <ContactSection />
-      <SiteFooter />
-      <CookiePopup />
-      <ChatWidget />
-    </div>
+    </PageLayout>
   );
 };
 
