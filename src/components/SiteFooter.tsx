@@ -53,7 +53,10 @@ const SiteFooter = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-primary-foreground/30">© 2026 Worktual. All rights reserved.</p>
+          <div>
+            <p className="text-xs text-primary-foreground/30">© 2026 Worktual. All rights reserved.</p>
+            <p className="text-xs text-primary-foreground/30">Email: info@zoragobalai.com | Phone:+91 9087000345</p>
+          </div>
           <div className="flex gap-6">
             {["Twitter", "LinkedIn", "GitHub"].map((social) => (
               <a key={social} href="#" className="text-xs text-primary-foreground/30 hover:text-primary-foreground/60 transition-colors">

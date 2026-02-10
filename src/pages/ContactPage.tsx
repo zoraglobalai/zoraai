@@ -37,7 +37,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-navy">Email</p>
-                      <p className="text-sm text-muted-foreground">hello@worktual.com</p>
+                      <p className="text-sm text-muted-foreground">info@zoragobalai.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -46,7 +46,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-navy">Phone</p>
-                      <p className="text-sm text-muted-foreground">+44 (0) 20 7946 0958</p>
+                      <p className="text-sm text-muted-foreground">9087000345</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -55,7 +55,10 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-navy">Office</p>
-                      <p className="text-sm text-muted-foreground">London, United Kingdom</p>
+                      <p className="text-sm text-muted-foreground">Ground Floor, 12, Rajiv Gandhi Salai,
+Srinivasa Nagar,
+Kandhanchavadi, Perungudi,
+Chennai, Tamil Nadu 600096</p>
                     </div>
                   </div>
                 </div>

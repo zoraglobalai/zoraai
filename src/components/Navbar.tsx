@@ -33,10 +33,15 @@ const Navbar = () => {
         scrolled ? "bg-card/80 backdrop-blur-xl shadow-card border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-8">
-        <Link to="/" className="text-2xl font-bold text-navy tracking-tight">
-          Worktual
-        </Link>
+      <div className="container mx-auto flex items-center justify-between py-0 px-6 lg:px-8">
+        <Link to="/" className="flex items-center">
+  <img
+    src="/images/zora-logo.png"
+    alt="Zora Technologies"
+    className="h-16 w-auto lg:h-28"
+  />
+</Link>
+
 
         <div className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
