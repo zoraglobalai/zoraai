@@ -26,7 +26,7 @@ const footerLinks = {
 
 const SiteFooter = () => {
   return (
-    <footer className="bg-navy py-16">
+    <footer className="bg-background py-16">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
