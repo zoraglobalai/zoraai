@@ -30,7 +30,7 @@ const SiteFooter = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="text-2xl font-bold text-primary-foreground tracking-tight">Worktual</Link>
+            <Link to="/" className="text-2xl font-bold text-primary-foreground tracking-tight">Zora Global AI Technologies</Link>
             <p className="mt-4 text-sm text-primary-foreground/50 leading-relaxed">
               Enterprise AI solutions, built bespoke.
             </p>
@@ -54,8 +54,8 @@ const SiteFooter = () => {
 
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <p className="text-xs text-primary-foreground/30">© 2026 Worktual. All rights reserved.</p>
-            <p className="text-xs text-primary-foreground/30">Email: info@zoragobalai.com | Phone:+91 9087000345</p>
+            <p className="text-xs text-primary-foreground/30">© 2026 Zora Global AI. All rights reserved.</p>
+            <p className="text-xs text-primary-foreground/30">Email: info@zoraglobalai.com | Phone:+91 9087000345</p>
           </div>
           <div className="flex gap-6">
             {["Twitter", "LinkedIn", "GitHub"].map((social) => (
